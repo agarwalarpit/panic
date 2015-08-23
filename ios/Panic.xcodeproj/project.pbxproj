@@ -25,6 +25,13 @@
 		FC9790441B8A3CB2001AAC0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC9790431B8A3CB2001AAC0A /* Info.plist */; };
 		FC9790461B8A4A7D001AAC0A /* CallAPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790451B8A4A7D001AAC0A /* CallAPhone.swift */; };
 		FC9790491B8A4F14001AAC0A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790481B8A4F14001AAC0A /* SettingsViewController.swift */; };
+		FC97904D1B8A53F0001AAC0A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97904C1B8A53F0001AAC0A /* Location.swift */; };
+		FC97904F1B8A5587001AAC0A /* AlertForUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97904E1B8A5587001AAC0A /* AlertForUserLocation.swift */; };
+		FC9790511B8A55E6001AAC0A /* SendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790501B8A55E6001AAC0A /* SendMessage.swift */; };
+		FC9790531B8A57C2001AAC0A /* ReverseGeocode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790521B8A57C2001AAC0A /* ReverseGeocode.swift */; };
+		FC9790551B8A57F0001AAC0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790541B8A57F0001AAC0A /* Constants.swift */; };
+		FC9790571B8A59FE001AAC0A /* RESTCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790561B8A59FE001AAC0A /* RESTCall.swift */; };
+		FC9790591B8A5AB7001AAC0A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790581B8A5AB7001AAC0A /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		FC9790431B8A3CB2001AAC0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = "<group>"; };
 		FC9790451B8A4A7D001AAC0A /* CallAPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallAPhone.swift; path = Networking/CallAPhone.swift; sourceTree = "<group>"; };
 		FC9790481B8A4F14001AAC0A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Controller/SettingsViewController.swift; sourceTree = "<group>"; };
+		FC97904C1B8A53F0001AAC0A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Networking/Location.swift; sourceTree = "<group>"; };
+		FC97904E1B8A5587001AAC0A /* AlertForUserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertForUserLocation.swift; path = Networking/AlertForUserLocation.swift; sourceTree = "<group>"; };
+		FC9790501B8A55E6001AAC0A /* SendMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendMessage.swift; path = Networking/SendMessage.swift; sourceTree = "<group>"; };
+		FC9790521B8A57C2001AAC0A /* ReverseGeocode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReverseGeocode.swift; path = Networking/ReverseGeocode.swift; sourceTree = "<group>"; };
+		FC9790541B8A57F0001AAC0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SupportingFiles/Constants.swift; sourceTree = "<group>"; };
+		FC9790561B8A59FE001AAC0A /* RESTCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RESTCall.swift; path = Networking/RESTCall.swift; sourceTree = "<group>"; };
+		FC9790581B8A5AB7001AAC0A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = SupportingFiles/SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +131,9 @@
 				FC9790431B8A3CB2001AAC0A /* Info.plist */,
 				FC9790411B8A3C82001AAC0A /* MaterialKit */,
 				FC97901D1B8A3B85001AAC0A /* Alamofire.swift */,
+				FC9790581B8A5AB7001AAC0A /* SwiftyJSON.swift */,
 				FC97901E1B8A3B85001AAC0A /* AppDelegate.swift */,
+				FC9790541B8A57F0001AAC0A /* Constants.swift */,
 				FC9790171B8A3B75001AAC0A /* Panic-Bridging-Header.h */,
 				FC9790211B8A3B85001AAC0A /* Images.xcassets */,
 			);
@@ -167,7 +183,12 @@
 		FC9790471B8A4A81001AAC0A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				FC9790561B8A59FE001AAC0A /* RESTCall.swift */,
+				FC97904C1B8A53F0001AAC0A /* Location.swift */,
+				FC9790521B8A57C2001AAC0A /* ReverseGeocode.swift */,
 				FC9790451B8A4A7D001AAC0A /* CallAPhone.swift */,
+				FC97904E1B8A5587001AAC0A /* AlertForUserLocation.swift */,
+				FC9790501B8A55E6001AAC0A /* SendMessage.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -275,17 +296,24 @@
 			files = (
 				FC9790251B8A3B85001AAC0A /* AppDelegate.swift in Sources */,
 				FC97903F1B8A3C7D001AAC0A /* MKTableViewCell.swift in Sources */,
+				FC9790571B8A59FE001AAC0A /* RESTCall.swift in Sources */,
+				FC9790591B8A5AB7001AAC0A /* SwiftyJSON.swift in Sources */,
 				FC97903E1B8A3C7D001AAC0A /* MKLayer.swift in Sources */,
 				FC9790241B8A3B85001AAC0A /* Alamofire.swift in Sources */,
 				FC97903C1B8A3C7D001AAC0A /* MKImageView.swift in Sources */,
 				FC97903D1B8A3C7D001AAC0A /* MKLabel.swift in Sources */,
+				FC97904D1B8A53F0001AAC0A /* Location.swift in Sources */,
 				FC9790191B8A3B76001AAC0A /* ViewController.swift in Sources */,
 				FC97903A1B8A3C7D001AAC0A /* MKButton.swift in Sources */,
 				FC97901C1B8A3B7F001AAC0A /* Panic.xcdatamodeld in Sources */,
 				FC9790401B8A3C7D001AAC0A /* MKTextField.swift in Sources */,
+				FC9790511B8A55E6001AAC0A /* SendMessage.swift in Sources */,
 				FC9790491B8A4F14001AAC0A /* SettingsViewController.swift in Sources */,
 				FC9790461B8A4A7D001AAC0A /* CallAPhone.swift in Sources */,
+				FC97904F1B8A5587001AAC0A /* AlertForUserLocation.swift in Sources */,
+				FC9790531B8A57C2001AAC0A /* ReverseGeocode.swift in Sources */,
 				FC97903B1B8A3C7D001AAC0A /* MKColor.swift in Sources */,
+				FC9790551B8A57F0001AAC0A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

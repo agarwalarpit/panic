@@ -52,7 +52,7 @@ extension ViewController {
             }
         }
         
-        callANumber(2174171142)
+        alertEveryoneForUser("Arpit Agarwal")
     }
     
     func didTapSettingsButton(sender: AnyObject) {
