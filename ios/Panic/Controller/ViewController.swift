@@ -18,9 +18,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         setButtonUI()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         setInformationLabelUI()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,11 +39,13 @@ extension ViewController {
         
         println("Tapped panic button")
         
-        self.informationLabel.text = "Calling your emergency contact ... "
+        self.informationLabel.text = "Calling the local police ... "
         
         UIView.animateWithDuration(0.2, animations: { () -> Void in
             self.informationLabel.alpha = 1.0
         })
+        
+        callANumber(2174171142)
     }
 }
 
