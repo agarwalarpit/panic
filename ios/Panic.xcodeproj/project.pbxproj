@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC978FF51B8A3AAD001AAC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC978FF41B8A3AAD001AAC0A /* AppDelegate.swift */; };
-		FC978FF81B8A3AAD001AAC0A /* Panic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC978FF61B8A3AAD001AAC0A /* Panic.xcdatamodeld */; };
-		FC978FFA1B8A3AAD001AAC0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC978FF91B8A3AAD001AAC0A /* ViewController.swift */; };
-		FC978FFD1B8A3AAD001AAC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC978FFB1B8A3AAD001AAC0A /* Main.storyboard */; };
-		FC978FFF1B8A3AAD001AAC0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC978FFE1B8A3AAD001AAC0A /* Images.xcassets */; };
-		FC9790021B8A3AAD001AAC0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9790001B8A3AAD001AAC0A /* LaunchScreen.xib */; };
 		FC97900E1B8A3AAD001AAC0A /* PanicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97900D1B8A3AAD001AAC0A /* PanicTests.swift */; };
+		FC9790191B8A3B76001AAC0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790181B8A3B76001AAC0A /* ViewController.swift */; };
+		FC97901C1B8A3B7F001AAC0A /* Panic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC97901A1B8A3B7F001AAC0A /* Panic.xcdatamodeld */; };
+		FC9790241B8A3B85001AAC0A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97901D1B8A3B85001AAC0A /* Alamofire.swift */; };
+		FC9790251B8A3B85001AAC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97901E1B8A3B85001AAC0A /* AppDelegate.swift */; };
+		FC9790281B8A3B85001AAC0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9790211B8A3B85001AAC0A /* Images.xcassets */; };
+		FC97902D1B8A3BDC001AAC0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC97902B1B8A3BDC001AAC0A /* LaunchScreen.xib */; };
+		FC97902E1B8A3BDC001AAC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC97902C1B8A3BDC001AAC0A /* Main.storyboard */; };
+		FC97903A1B8A3C7D001AAC0A /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790331B8A3C7D001AAC0A /* MKButton.swift */; };
+		FC97903B1B8A3C7D001AAC0A /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790341B8A3C7D001AAC0A /* MKColor.swift */; };
+		FC97903C1B8A3C7D001AAC0A /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790351B8A3C7D001AAC0A /* MKImageView.swift */; };
+		FC97903D1B8A3C7D001AAC0A /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790361B8A3C7D001AAC0A /* MKLabel.swift */; };
+		FC97903E1B8A3C7D001AAC0A /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790371B8A3C7D001AAC0A /* MKLayer.swift */; };
+		FC97903F1B8A3C7D001AAC0A /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790381B8A3C7D001AAC0A /* MKTableViewCell.swift */; };
+		FC9790401B8A3C7D001AAC0A /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790391B8A3C7D001AAC0A /* MKTextField.swift */; };
+		FC9790441B8A3CB2001AAC0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC9790431B8A3CB2001AAC0A /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,16 +37,25 @@
 
 /* Begin PBXFileReference section */
 		FC978FEF1B8A3AAD001AAC0A /* Panic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC978FF31B8A3AAD001AAC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC978FF41B8A3AAD001AAC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC978FF71B8A3AAD001AAC0A /* Panic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Panic.xcdatamodel; sourceTree = "<group>"; };
-		FC978FF91B8A3AAD001AAC0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC978FFC1B8A3AAD001AAC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC978FFE1B8A3AAD001AAC0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FC9790011B8A3AAD001AAC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FC9790071B8A3AAD001AAC0A /* PanicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97900C1B8A3AAD001AAC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC97900D1B8A3AAD001AAC0A /* PanicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicTests.swift; sourceTree = "<group>"; };
+		FC9790171B8A3B75001AAC0A /* Panic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panic-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC9790181B8A3B76001AAC0A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		FC97901B1B8A3B7F001AAC0A /* Panic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Panic.xcdatamodel; sourceTree = "<group>"; };
+		FC97901D1B8A3B85001AAC0A /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = SupportingFiles/Alamofire.swift; sourceTree = "<group>"; };
+		FC97901E1B8A3B85001AAC0A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SupportingFiles/AppDelegate.swift; sourceTree = "<group>"; };
+		FC9790211B8A3B85001AAC0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SupportingFiles/Images.xcassets; sourceTree = "<group>"; };
+		FC97902B1B8A3BDC001AAC0A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = View/LaunchScreen.xib; sourceTree = "<group>"; };
+		FC97902C1B8A3BDC001AAC0A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = View/Main.storyboard; sourceTree = "<group>"; };
+		FC9790331B8A3C7D001AAC0A /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = SupportingFiles/MaterialKit/MKButton.swift; sourceTree = "<group>"; };
+		FC9790341B8A3C7D001AAC0A /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = SupportingFiles/MaterialKit/MKColor.swift; sourceTree = "<group>"; };
+		FC9790351B8A3C7D001AAC0A /* MKImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = SupportingFiles/MaterialKit/MKImageView.swift; sourceTree = "<group>"; };
+		FC9790361B8A3C7D001AAC0A /* MKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = SupportingFiles/MaterialKit/MKLabel.swift; sourceTree = "<group>"; };
+		FC9790371B8A3C7D001AAC0A /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = SupportingFiles/MaterialKit/MKLayer.swift; sourceTree = "<group>"; };
+		FC9790381B8A3C7D001AAC0A /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = SupportingFiles/MaterialKit/MKTableViewCell.swift; sourceTree = "<group>"; };
+		FC9790391B8A3C7D001AAC0A /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = SupportingFiles/MaterialKit/MKTextField.swift; sourceTree = "<group>"; };
+		FC9790431B8A3CB2001AAC0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +97,9 @@
 		FC978FF11B8A3AAD001AAC0A /* Panic */ = {
 			isa = PBXGroup;
 			children = (
-				FC978FF41B8A3AAD001AAC0A /* AppDelegate.swift */,
-				FC978FF91B8A3AAD001AAC0A /* ViewController.swift */,
-				FC978FFB1B8A3AAD001AAC0A /* Main.storyboard */,
-				FC978FFE1B8A3AAD001AAC0A /* Images.xcassets */,
-				FC9790001B8A3AAD001AAC0A /* LaunchScreen.xib */,
-				FC978FF61B8A3AAD001AAC0A /* Panic.xcdatamodeld */,
+				FC97901A1B8A3B7F001AAC0A /* Panic.xcdatamodeld */,
+				FC9790181B8A3B76001AAC0A /* ViewController.swift */,
+				FC97902F1B8A3BE0001AAC0A /* View */,
 				FC978FF21B8A3AAD001AAC0A /* Supporting Files */,
 			);
 			path = Panic;
@@ -93,7 +108,12 @@
 		FC978FF21B8A3AAD001AAC0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC978FF31B8A3AAD001AAC0A /* Info.plist */,
+				FC9790431B8A3CB2001AAC0A /* Info.plist */,
+				FC9790411B8A3C82001AAC0A /* MaterialKit */,
+				FC97901D1B8A3B85001AAC0A /* Alamofire.swift */,
+				FC97901E1B8A3B85001AAC0A /* AppDelegate.swift */,
+				FC9790171B8A3B75001AAC0A /* Panic-Bridging-Header.h */,
+				FC9790211B8A3B85001AAC0A /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +133,29 @@
 				FC97900C1B8A3AAD001AAC0A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC97902F1B8A3BE0001AAC0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC97902B1B8A3BDC001AAC0A /* LaunchScreen.xib */,
+				FC97902C1B8A3BDC001AAC0A /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FC9790411B8A3C82001AAC0A /* MaterialKit */ = {
+			isa = PBXGroup;
+			children = (
+				FC9790331B8A3C7D001AAC0A /* MKButton.swift */,
+				FC9790341B8A3C7D001AAC0A /* MKColor.swift */,
+				FC9790351B8A3C7D001AAC0A /* MKImageView.swift */,
+				FC9790361B8A3C7D001AAC0A /* MKLabel.swift */,
+				FC9790371B8A3C7D001AAC0A /* MKLayer.swift */,
+				FC9790381B8A3C7D001AAC0A /* MKTableViewCell.swift */,
+				FC9790391B8A3C7D001AAC0A /* MKTextField.swift */,
+			);
+			name = MaterialKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC978FFD1B8A3AAD001AAC0A /* Main.storyboard in Resources */,
-				FC9790021B8A3AAD001AAC0A /* LaunchScreen.xib in Resources */,
-				FC978FFF1B8A3AAD001AAC0A /* Images.xcassets in Resources */,
+				FC9790441B8A3CB2001AAC0A /* Info.plist in Resources */,
+				FC97902D1B8A3BDC001AAC0A /* LaunchScreen.xib in Resources */,
+				FC97902E1B8A3BDC001AAC0A /* Main.storyboard in Resources */,
+				FC9790281B8A3B85001AAC0A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +259,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC978FFA1B8A3AAD001AAC0A /* ViewController.swift in Sources */,
-				FC978FF51B8A3AAD001AAC0A /* AppDelegate.swift in Sources */,
-				FC978FF81B8A3AAD001AAC0A /* Panic.xcdatamodeld in Sources */,
+				FC9790251B8A3B85001AAC0A /* AppDelegate.swift in Sources */,
+				FC97903F1B8A3C7D001AAC0A /* MKTableViewCell.swift in Sources */,
+				FC97903E1B8A3C7D001AAC0A /* MKLayer.swift in Sources */,
+				FC9790241B8A3B85001AAC0A /* Alamofire.swift in Sources */,
+				FC97903C1B8A3C7D001AAC0A /* MKImageView.swift in Sources */,
+				FC97903D1B8A3C7D001AAC0A /* MKLabel.swift in Sources */,
+				FC9790191B8A3B76001AAC0A /* ViewController.swift in Sources */,
+				FC97903A1B8A3C7D001AAC0A /* MKButton.swift in Sources */,
+				FC97901C1B8A3B7F001AAC0A /* Panic.xcdatamodeld in Sources */,
+				FC9790401B8A3C7D001AAC0A /* MKTextField.swift in Sources */,
+				FC97903B1B8A3C7D001AAC0A /* MKColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,25 +290,6 @@
 			targetProxy = FC9790081B8A3AAD001AAC0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FC978FFB1B8A3AAD001AAC0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC978FFC1B8A3AAD001AAC0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FC9790001B8A3AAD001AAC0A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC9790011B8A3AAD001AAC0A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FC97900F1B8A3AAD001AAC0A /* Debug */ = {
@@ -344,9 +377,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Panic/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Panic/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Panic/Panic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +390,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Panic/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Panic/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Panic/Panic-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -425,13 +463,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FC978FF61B8A3AAD001AAC0A /* Panic.xcdatamodeld */ = {
+		FC97901A1B8A3B7F001AAC0A /* Panic.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FC978FF71B8A3AAD001AAC0A /* Panic.xcdatamodel */,
+				FC97901B1B8A3B7F001AAC0A /* Panic.xcdatamodel */,
 			);
-			currentVersion = FC978FF71B8A3AAD001AAC0A /* Panic.xcdatamodel */;
-			path = Panic.xcdatamodeld;
+			currentVersion = FC97901B1B8A3B7F001AAC0A /* Panic.xcdatamodel */;
+			name = Panic.xcdatamodeld;
+			path = Model/Panic.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
