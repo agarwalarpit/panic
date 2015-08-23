@@ -10,12 +10,12 @@ import Foundation
 
 func alertEveryoneForUser(userName: String) -> Void {
     
-    callANumber(2174171142)
+    callANumber("2174171142")
     
     locationManager.initLocationManager { (location, addressString) -> Void in
         
         // Text location to people.
 
-        sendMessage("I'm in danger. Help me! SOS. My name is : \(userName)", addressString, [2174171142])
+        sendMessage("I'm in danger. Help me! SOS. My name is : \(userName)", addressString, ["2174171142"])
     }
 }

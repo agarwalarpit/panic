@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-func callANumber(phoneNumber: Int) -> Void {
+func callANumber(phoneNumber: String) -> Void {
     
     if let url = NSURL(string: "tel://\(phoneNumber)") {
         UIApplication.sharedApplication().openURL(url)

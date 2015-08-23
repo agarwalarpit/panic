@@ -8,7 +8,7 @@
 
 import Foundation
 
-func sendMessage(textMessage: String, addressString: String?, destinationPhoneNumbers: [Int]) {
+func sendMessage(textMessage: String, addressString: String?, destinationPhoneNumbers: [String]) {
     
     println(textMessage)
     println(addressString)
@@ -17,7 +17,8 @@ func sendMessage(textMessage: String, addressString: String?, destinationPhoneNu
     
     let phoneMessageEndpoint: String = "https://rest.nexmo.com/sms/json?"
     
-    for phoneNumber in destinationPhoneNumbers {
+    destinationPhoneNumbers.map {
+        (var phoneNumber) -> Void in
         
         let parameters: [String: String] = [
             "api_key": "409054e1",
