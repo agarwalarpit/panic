@@ -24,6 +24,7 @@
 		FC9790401B8A3C7D001AAC0A /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790391B8A3C7D001AAC0A /* MKTextField.swift */; };
 		FC9790441B8A3CB2001AAC0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC9790431B8A3CB2001AAC0A /* Info.plist */; };
 		FC9790461B8A4A7D001AAC0A /* CallAPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790451B8A4A7D001AAC0A /* CallAPhone.swift */; };
+		FC9790491B8A4F14001AAC0A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790481B8A4F14001AAC0A /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		FC9790391B8A3C7D001AAC0A /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = SupportingFiles/MaterialKit/MKTextField.swift; sourceTree = "<group>"; };
 		FC9790431B8A3CB2001AAC0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = "<group>"; };
 		FC9790451B8A4A7D001AAC0A /* CallAPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallAPhone.swift; path = Networking/CallAPhone.swift; sourceTree = "<group>"; };
+		FC9790481B8A4F14001AAC0A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Controller/SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				FC97901A1B8A3B7F001AAC0A /* Panic.xcdatamodeld */,
 				FC9790181B8A3B76001AAC0A /* ViewController.swift */,
+				FC9790481B8A4F14001AAC0A /* SettingsViewController.swift */,
 				FC9790471B8A4A81001AAC0A /* Networking */,
 				FC97902F1B8A3BE0001AAC0A /* View */,
 				FC978FF21B8A3AAD001AAC0A /* Supporting Files */,
@@ -280,6 +283,7 @@
 				FC97903A1B8A3C7D001AAC0A /* MKButton.swift in Sources */,
 				FC97901C1B8A3B7F001AAC0A /* Panic.xcdatamodeld in Sources */,
 				FC9790401B8A3C7D001AAC0A /* MKTextField.swift in Sources */,
+				FC9790491B8A4F14001AAC0A /* SettingsViewController.swift in Sources */,
 				FC9790461B8A4A7D001AAC0A /* CallAPhone.swift in Sources */,
 				FC97903B1B8A3C7D001AAC0A /* MKColor.swift in Sources */,
 			);
