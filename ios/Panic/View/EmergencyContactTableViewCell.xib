@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="EmergencyContactTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmergencyContactTableViewCell" rowHeight="120" id="hx3-Mq-kyf" customClass="EmergencyContactTableViewCell" customModule="Panic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hx3-Mq-kyf" id="wWf-eK-ALM">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCd-hZ-jzR">
+                        <rect key="frame" x="20" y="67" width="292" height="44.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="XsF-xm-elJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5u-LN-vR8" customClass="MKLabel" customModule="Panic" customModuleProvider="target">
+                        <rect key="frame" x="20" y="8" width="182" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="182" id="JXd-uk-XIn"/>
+                            <constraint firstAttribute="height" constant="40" id="eNT-7K-jER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskEnabled" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAniEnabled" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verified by Ameri, Inc." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cC-Vw-mLN">
+                        <rect key="frame" x="162" y="98" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="42w-Xc-UY9"/>
+                            <constraint firstAttribute="height" constant="21" id="B3O-4N-g92"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.1301279152" green="0.58495236630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verified-check" translatesAutoresizingMaskIntoConstraints="NO" id="efN-vZ-hJX" customClass="MKImageView" customModule="Panic" customModuleProvider="target">
+                        <rect key="frame" x="261" y="34" width="51" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="6CL-hO-x4N"/>
+                            <constraint firstAttribute="width" constant="51" id="aN1-X2-FR5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskEnabled" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3cC-Vw-mLN" secondAttribute="bottom" constant="0.5" id="5Ww-M1-1ab"/>
+                    <constraint firstItem="fCd-hZ-jzR" firstAttribute="leading" secondItem="wWf-eK-ALM" secondAttribute="leading" constant="20" id="FyT-PH-4IV"/>
+                    <constraint firstAttribute="trailing" secondItem="3cC-Vw-mLN" secondAttribute="trailing" constant="8" id="IcQ-ZW-saY"/>
+                    <constraint firstAttribute="bottom" secondItem="fCd-hZ-jzR" secondAttribute="bottom" constant="8" id="QgU-3Z-b04"/>
+                    <constraint firstItem="X5u-LN-vR8" firstAttribute="top" secondItem="wWf-eK-ALM" secondAttribute="top" constant="8" id="Uo7-HK-FKP"/>
+                    <constraint firstItem="X5u-LN-vR8" firstAttribute="leading" secondItem="wWf-eK-ALM" secondAttribute="leading" constant="20" id="Xwl-fy-Ygf"/>
+                    <constraint firstAttribute="trailing" secondItem="efN-vZ-hJX" secondAttribute="trailing" constant="8" id="tTG-oP-Uho"/>
+                    <constraint firstAttribute="centerY" secondItem="efN-vZ-hJX" secondAttribute="centerY" id="wNz-o0-ptP"/>
+                    <constraint firstAttribute="trailing" secondItem="fCd-hZ-jzR" secondAttribute="trailing" constant="8" id="z3K-Pf-LER"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fullName" destination="X5u-LN-vR8" id="yQ2-bt-rLx"/>
+                <outlet property="labelPhoneNumber" destination="fCd-hZ-jzR" id="76b-AT-9KJ"/>
+            </connections>
+            <point key="canvasLocation" x="484" y="233"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="verified-check" width="512" height="512"/>
+    </resources>
+</document>

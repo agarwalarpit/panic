@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3040EA1B8A756900D38A8A /* EmergencyContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3040E91B8A756900D38A8A /* EmergencyContactTableViewCell.swift */; };
+		FC3040EC1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3040EB1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib */; };
+		FC3040EE1B8A7E7800D38A8A /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3040ED1B8A7E7800D38A8A /* Misc.swift */; };
 		FC97900E1B8A3AAD001AAC0A /* PanicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97900D1B8A3AAD001AAC0A /* PanicTests.swift */; };
 		FC9790191B8A3B76001AAC0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790181B8A3B76001AAC0A /* ViewController.swift */; };
 		FC97901C1B8A3B7F001AAC0A /* Panic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC97901A1B8A3B7F001AAC0A /* Panic.xcdatamodeld */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC3040E91B8A756900D38A8A /* EmergencyContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmergencyContactTableViewCell.swift; path = Controller/EmergencyContactTableViewCell.swift; sourceTree = "<group>"; };
+		FC3040EB1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmergencyContactTableViewCell.xib; path = View/EmergencyContactTableViewCell.xib; sourceTree = "<group>"; };
+		FC3040ED1B8A7E7800D38A8A /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		FC978FEF1B8A3AAD001AAC0A /* Panic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9790071B8A3AAD001AAC0A /* PanicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97900C1B8A3AAD001AAC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 				FC97901A1B8A3B7F001AAC0A /* Panic.xcdatamodeld */,
 				FC9790181B8A3B76001AAC0A /* ViewController.swift */,
 				FC9790481B8A4F14001AAC0A /* SettingsViewController.swift */,
+				FC3040ED1B8A7E7800D38A8A /* Misc.swift */,
+				FC3040E91B8A756900D38A8A /* EmergencyContactTableViewCell.swift */,
 				FC9790471B8A4A81001AAC0A /* Networking */,
 				FC97902F1B8A3BE0001AAC0A /* View */,
 				FC978FF21B8A3AAD001AAC0A /* Supporting Files */,
@@ -162,6 +170,7 @@
 			children = (
 				FC97902B1B8A3BDC001AAC0A /* LaunchScreen.xib */,
 				FC97902C1B8A3BDC001AAC0A /* Main.storyboard */,
+				FC3040EB1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 			files = (
 				FC9790441B8A3CB2001AAC0A /* Info.plist in Resources */,
 				FC97902D1B8A3BDC001AAC0A /* LaunchScreen.xib in Resources */,
+				FC3040EC1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib in Resources */,
 				FC97902E1B8A3BDC001AAC0A /* Main.storyboard in Resources */,
 				FC9790281B8A3B85001AAC0A /* Images.xcassets in Resources */,
 			);
@@ -294,10 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3040EA1B8A756900D38A8A /* EmergencyContactTableViewCell.swift in Sources */,
 				FC9790251B8A3B85001AAC0A /* AppDelegate.swift in Sources */,
 				FC97903F1B8A3C7D001AAC0A /* MKTableViewCell.swift in Sources */,
 				FC9790571B8A59FE001AAC0A /* RESTCall.swift in Sources */,
 				FC9790591B8A5AB7001AAC0A /* SwiftyJSON.swift in Sources */,
+				FC3040EE1B8A7E7800D38A8A /* Misc.swift in Sources */,
 				FC97903E1B8A3C7D001AAC0A /* MKLayer.swift in Sources */,
 				FC9790241B8A3B85001AAC0A /* Alamofire.swift in Sources */,
 				FC97903C1B8A3C7D001AAC0A /* MKImageView.swift in Sources */,

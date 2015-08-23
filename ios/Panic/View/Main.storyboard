@@ -83,9 +83,150 @@
                     <view key="view" contentMode="scaleToFill" id="sZQ-5B-wcx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYl-Bw-G8a" customClass="MKTextField" customModule="Panic" customModuleProvider="target">
+                                <rect key="frame" x="100" y="72" width="484" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UK7-zy-Mjx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" keyboardAppearance="alert" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowAniEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="aniDuration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.1301279152" green="0.58495236630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3S-cI-iZ8" customClass="MKTextField" customModule="Panic" customModuleProvider="target">
+                                <rect key="frame" x="100" y="120" width="484" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CsT-bK-Daq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" keyboardAppearance="alert" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelBottomMargin">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowAniEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="aniDuration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.1301279152" green="0.58495236630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UL8-nf-Oli">
+                                <rect key="frame" x="16" y="72" width="76" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KQc-JB-Ixh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9R-CK-ftu">
+                                <rect key="frame" x="16" y="120" width="76" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qkv-VM-r8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MTy-sE-PbA">
+                                <rect key="frame" x="0.0" y="231" width="600" height="369"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmergencyContactTableViewCell" id="nIa-gE-vxa">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nIa-gE-vxa" id="TH5-7B-IZJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwB-IW-xIj" customClass="MKButton" customModule="Panic" customModuleProvider="target">
+                                <rect key="frame" x="437" y="183" width="152" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="3Qm-JA-YQQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="kd7-Bp-svr"/>
+                                </constraints>
+                                <state key="normal" title="Add new contact">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAddContact:" destination="gLN-qs-WCo" eventType="touchUpInside" id="aTe-g2-UkS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency contacts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exc-i8-f7R">
+                                <rect key="frame" x="16" y="183" width="413" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZOQ-o9-4zz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MTy-sE-PbA" secondAttribute="trailing" id="12T-5b-Cra"/>
+                            <constraint firstItem="dYl-Bw-G8a" firstAttribute="leading" secondItem="sZQ-5B-wcx" secondAttribute="leading" constant="100" id="5rB-Lf-5OE"/>
+                            <constraint firstItem="C3S-cI-iZ8" firstAttribute="top" secondItem="dYl-Bw-G8a" secondAttribute="bottom" constant="8" id="7FQ-4S-hTe"/>
+                            <constraint firstItem="dYl-Bw-G8a" firstAttribute="leading" secondItem="UL8-nf-Oli" secondAttribute="trailing" constant="8" id="8dc-Cg-HHk"/>
+                            <constraint firstItem="C3S-cI-iZ8" firstAttribute="leading" secondItem="sZQ-5B-wcx" secondAttribute="leading" constant="100" id="Awn-Zl-nCG"/>
+                            <constraint firstItem="cwB-IW-xIj" firstAttribute="leading" secondItem="exc-i8-f7R" secondAttribute="trailing" constant="8" id="FFF-i5-5xZ"/>
+                            <constraint firstItem="MTy-sE-PbA" firstAttribute="top" secondItem="cwB-IW-xIj" secondAttribute="bottom" constant="8" id="FFn-Fg-HWZ"/>
+                            <constraint firstItem="exc-i8-f7R" firstAttribute="leading" secondItem="sZQ-5B-wcx" secondAttribute="leading" constant="16" id="LyE-xK-dlO"/>
+                            <constraint firstItem="C3S-cI-iZ8" firstAttribute="leading" secondItem="Y9R-CK-ftu" secondAttribute="trailing" constant="8" id="MDZ-7y-pGi"/>
+                            <constraint firstItem="UL8-nf-Oli" firstAttribute="top" secondItem="qvG-ye-31O" secondAttribute="bottom" constant="8" id="MLO-1u-joq"/>
+                            <constraint firstItem="Y9R-CK-ftu" firstAttribute="top" secondItem="UL8-nf-Oli" secondAttribute="bottom" constant="8" id="Z16-MG-RsF"/>
+                            <constraint firstItem="Y9R-CK-ftu" firstAttribute="top" secondItem="UL8-nf-Oli" secondAttribute="bottom" constant="8" id="asp-uV-hnT"/>
+                            <constraint firstItem="MTy-sE-PbA" firstAttribute="top" secondItem="exc-i8-f7R" secondAttribute="bottom" constant="8" id="ej2-Ej-vPx"/>
+                            <constraint firstItem="MTy-sE-PbA" firstAttribute="leading" secondItem="sZQ-5B-wcx" secondAttribute="leading" id="fxH-3x-yc3"/>
+                            <constraint firstAttribute="trailing" secondItem="dYl-Bw-G8a" secondAttribute="trailing" constant="16" id="gE7-c8-bWg"/>
+                            <constraint firstItem="Y9R-CK-ftu" firstAttribute="leading" secondItem="sZQ-5B-wcx" secondAttribute="leading" constant="16" id="haM-en-4Py"/>
+                            <constraint firstItem="C3S-cI-iZ8" firstAttribute="top" secondItem="dYl-Bw-G8a" secondAttribute="bottom" constant="8" id="iEx-Ra-spN"/>
+                            <constraint firstAttribute="trailing" secondItem="cwB-IW-xIj" secondAttribute="trailing" constant="11" id="jD8-1u-Kug"/>
+                            <constraint firstItem="dYl-Bw-G8a" firstAttribute="top" secondItem="qvG-ye-31O" secondAttribute="bottom" constant="8" id="ppZ-BC-e8s"/>
+                            <constraint firstItem="bT3-4m-hwZ" firstAttribute="top" secondItem="MTy-sE-PbA" secondAttribute="bottom" id="qkf-vk-e7b"/>
+                            <constraint firstAttribute="trailing" secondItem="C3S-cI-iZ8" secondAttribute="trailing" constant="16" id="sQR-hK-wJO"/>
+                            <constraint firstItem="cwB-IW-xIj" firstAttribute="leading" secondItem="exc-i8-f7R" secondAttribute="trailing" constant="8" id="tA1-Tt-KJH"/>
+                            <constraint firstItem="UL8-nf-Oli" firstAttribute="leading" secondItem="sZQ-5B-wcx" secondAttribute="leading" constant="16" id="tla-OP-bql"/>
+                            <constraint firstItem="cwB-IW-xIj" firstAttribute="top" secondItem="C3S-cI-iZ8" secondAttribute="bottom" constant="23" id="wK3-n2-IUr"/>
+                            <constraint firstItem="MTy-sE-PbA" firstAttribute="top" secondItem="exc-i8-f7R" secondAttribute="bottom" constant="8" id="wRM-f1-9gF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NDK-ms-gny"/>
+                    <connections>
+                        <outlet property="tableView" destination="MTy-sE-PbA" id="Zja-2X-Z0w"/>
+                        <outlet property="textFieldFirstName" destination="dYl-Bw-G8a" id="QD0-fe-yZ5"/>
+                        <outlet property="textFieldLastName" destination="C3S-cI-iZ8" id="DtB-mU-LBX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tt-h1-EtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
