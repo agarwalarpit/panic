@@ -10,7 +10,7 @@ import Foundation
 
 func alertEveryoneForUser(userName: String) -> Void {
     
-//    callANumber(2174171142)
+    callANumber(2174171142)
     
     locationManager.initLocationManager { (location, addressString) -> Void in
         
