@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01ABF9F5D813BB884B616E06 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F60338F30B06856310CFD6 /* libPods.a */; };
+		FC02B3FA1B8AC86D00DFB4E7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FC02B3F91B8AC86D00DFB4E7 /* Podfile */; };
 		FC3040EA1B8A756900D38A8A /* EmergencyContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3040E91B8A756900D38A8A /* EmergencyContactTableViewCell.swift */; };
 		FC3040EC1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3040EB1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib */; };
 		FC3040EE1B8A7E7800D38A8A /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3040ED1B8A7E7800D38A8A /* Misc.swift */; };
@@ -35,7 +37,7 @@
 		FC9790511B8A55E6001AAC0A /* SendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790501B8A55E6001AAC0A /* SendMessage.swift */; };
 		FC9790531B8A57C2001AAC0A /* ReverseGeocode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790521B8A57C2001AAC0A /* ReverseGeocode.swift */; };
 		FC9790551B8A57F0001AAC0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790541B8A57F0001AAC0A /* Constants.swift */; };
-		FC9790571B8A59FE001AAC0A /* RESTCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790561B8A59FE001AAC0A /* RESTCall.swift */; };
+		FC9790571B8A59FE001AAC0A /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790561B8A59FE001AAC0A /* NetworkCall.swift */; };
 		FC9790591B8A5AB7001AAC0A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790581B8A5AB7001AAC0A /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95F60338F30B06856310CFD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D42EC92D1186D043A86FB5A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D6D606FC76E133249DF41BE3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FC02B3F91B8AC86D00DFB4E7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		FC3040E91B8A756900D38A8A /* EmergencyContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmergencyContactTableViewCell.swift; path = Controller/EmergencyContactTableViewCell.swift; sourceTree = "<group>"; };
 		FC3040EB1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmergencyContactTableViewCell.xib; path = View/EmergencyContactTableViewCell.xib; sourceTree = "<group>"; };
 		FC3040ED1B8A7E7800D38A8A /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
@@ -82,7 +88,7 @@
 		FC9790501B8A55E6001AAC0A /* SendMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendMessage.swift; path = Networking/SendMessage.swift; sourceTree = "<group>"; };
 		FC9790521B8A57C2001AAC0A /* ReverseGeocode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReverseGeocode.swift; path = Networking/ReverseGeocode.swift; sourceTree = "<group>"; };
 		FC9790541B8A57F0001AAC0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SupportingFiles/Constants.swift; sourceTree = "<group>"; };
-		FC9790561B8A59FE001AAC0A /* RESTCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RESTCall.swift; path = Networking/RESTCall.swift; sourceTree = "<group>"; };
+		FC9790561B8A59FE001AAC0A /* NetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkCall.swift; path = Networking/NetworkCall.swift; sourceTree = "<group>"; };
 		FC9790581B8A5AB7001AAC0A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = SupportingFiles/SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,7 @@
 			files = (
 				FC3040F31B8AC0EB00D38A8A /* Crashlytics.framework in Frameworks */,
 				FC3040F21B8AC0EB00D38A8A /* Fabric.framework in Frameworks */,
+				01ABF9F5D813BB884B616E06 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +113,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75E5FA51AEE73A310335F9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95F60338F30B06856310CFD6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDB0CB254F724EFDAC90BA75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D42EC92D1186D043A86FB5A /* Pods.debug.xcconfig */,
+				D6D606FC76E133249DF41BE3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC978FE61B8A3AAD001AAC0A = {
 			isa = PBXGroup;
 			children = (
+				FC02B3F91B8AC86D00DFB4E7 /* Podfile */,
 				FC978FF11B8A3AAD001AAC0A /* Panic */,
 				FC97900A1B8A3AAD001AAC0A /* PanicTests */,
 				FC978FF01B8A3AAD001AAC0A /* Products */,
+				CDB0CB254F724EFDAC90BA75 /* Pods */,
+				75E5FA51AEE73A310335F9EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,7 +227,7 @@
 		FC9790471B8A4A81001AAC0A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				FC9790561B8A59FE001AAC0A /* RESTCall.swift */,
+				FC9790561B8A59FE001AAC0A /* NetworkCall.swift */,
 				FC97904C1B8A53F0001AAC0A /* Location.swift */,
 				FC9790521B8A57C2001AAC0A /* ReverseGeocode.swift */,
 				FC9790451B8A4A7D001AAC0A /* CallAPhone.swift */,
@@ -217,10 +244,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC9790111B8A3AAD001AAC0A /* Build configuration list for PBXNativeTarget "Panic" */;
 			buildPhases = (
+				947F92D09E197A3AFDA9ADE7 /* Check Pods Manifest.lock */,
 				FC978FEB1B8A3AAD001AAC0A /* Sources */,
 				FC978FEC1B8A3AAD001AAC0A /* Frameworks */,
 				FC978FED1B8A3AAD001AAC0A /* Resources */,
-				FC3040EF1B8AC0B900D38A8A /* ShellScript */,
+				FC3040EF1B8AC0B900D38A8A /* Fabric run script */,
+				FC02B3EE1B8AC6C400DFB4E7 /* HockeyApp Run Script */,
+				5FCC834F4ADE9FCD009AAC26 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC02B3FA1B8AC86D00DFB4E7 /* Podfile in Resources */,
 				FC9790441B8A3CB2001AAC0A /* Info.plist in Resources */,
 				FC97902D1B8A3BDC001AAC0A /* LaunchScreen.xib in Resources */,
 				FC3040EC1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib in Resources */,
@@ -310,13 +341,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FC3040EF1B8AC0B900D38A8A /* ShellScript */ = {
+		5FCC834F4ADE9FCD009AAC26 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		947F92D09E197A3AFDA9ADE7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC02B3EE1B8AC6C400DFB4E7 /* HockeyApp Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "HockeyApp Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+		FC3040EF1B8AC0B900D38A8A /* Fabric run script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric run script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +409,7 @@
 				FC3040EA1B8A756900D38A8A /* EmergencyContactTableViewCell.swift in Sources */,
 				FC9790251B8A3B85001AAC0A /* AppDelegate.swift in Sources */,
 				FC97903F1B8A3C7D001AAC0A /* MKTableViewCell.swift in Sources */,
-				FC9790571B8A59FE001AAC0A /* RESTCall.swift in Sources */,
+				FC9790571B8A59FE001AAC0A /* NetworkCall.swift in Sources */,
 				FC9790591B8A5AB7001AAC0A /* SwiftyJSON.swift in Sources */,
 				FC3040EE1B8A7E7800D38A8A /* Misc.swift in Sources */,
 				FC97903E1B8A3C7D001AAC0A /* MKLayer.swift in Sources */,
@@ -457,13 +533,16 @@
 		};
 		FC9790121B8A3AAD001AAC0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D42EC92D1186D043A86FB5A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Panic/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -471,24 +550,29 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Panic/Panic-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FC9790131B8A3AAD001AAC0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D606FC76E133249DF41BE3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Panic/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Panic/Panic-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

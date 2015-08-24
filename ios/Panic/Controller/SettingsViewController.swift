@@ -68,7 +68,7 @@ extension SettingsViewController : UITableViewDelegate, UITableViewDataSource {
                 self.phoneArray.removeAtIndex(indexPath.row)
                 self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
                 
-                backgroundThread(delay: 0.2, background: { () -> Void in
+                executeMethodInBackgroundThread(delay: 0.2, background: { () -> Void in
                     self.tableView.reloadData()
                 }, completion: nil)
             }

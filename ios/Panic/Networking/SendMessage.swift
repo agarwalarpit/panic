@@ -8,12 +8,16 @@
 
 import Foundation
 
-func sendMessage(textMessage: String, addressString: String?, destinationPhoneNumbers: [String]) {
+func sendMessageWithTextAndLocationToGivenPhoneNumbers(textMessage: String, addressString: String?, destinationPhoneNumbers: [String]) {
     
     println(textMessage)
     println(addressString)
     
-    let messageString = "\(textMessage) and I'm near \(addressString!)"
+    var messageString = "\(textMessage)"
+    
+    if let address = addressString {
+        messageString += "and I'm near \(address)"
+    }
     
     let phoneMessageEndpoint: String = "https://rest.nexmo.com/sms/json?"
     

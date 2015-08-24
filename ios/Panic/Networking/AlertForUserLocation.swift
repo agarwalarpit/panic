@@ -16,6 +16,6 @@ func alertEveryoneForUser(userName: String) -> Void {
         
         // Text location to people.
 
-        sendMessage("I'm in danger. Help me! SOS. My name is : \(userName)", addressString, ["2174171142"])
+        sendMessageWithTextAndLocationToGivenPhoneNumbers("I'm in danger. Help me! SOS. My name is : \(userName)", addressString, ["2174171142"])
     }
 }
