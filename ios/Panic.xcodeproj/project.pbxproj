@@ -10,6 +10,8 @@
 		FC3040EA1B8A756900D38A8A /* EmergencyContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3040E91B8A756900D38A8A /* EmergencyContactTableViewCell.swift */; };
 		FC3040EC1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3040EB1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib */; };
 		FC3040EE1B8A7E7800D38A8A /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3040ED1B8A7E7800D38A8A /* Misc.swift */; };
+		FC3040F21B8AC0EB00D38A8A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3040F01B8AC0EB00D38A8A /* Fabric.framework */; };
+		FC3040F31B8AC0EB00D38A8A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3040F11B8AC0EB00D38A8A /* Crashlytics.framework */; };
 		FC97900E1B8A3AAD001AAC0A /* PanicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97900D1B8A3AAD001AAC0A /* PanicTests.swift */; };
 		FC9790191B8A3B76001AAC0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9790181B8A3B76001AAC0A /* ViewController.swift */; };
 		FC97901C1B8A3B7F001AAC0A /* Panic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC97901A1B8A3B7F001AAC0A /* Panic.xcdatamodeld */; };
@@ -51,6 +53,8 @@
 		FC3040E91B8A756900D38A8A /* EmergencyContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmergencyContactTableViewCell.swift; path = Controller/EmergencyContactTableViewCell.swift; sourceTree = "<group>"; };
 		FC3040EB1B8A758C00D38A8A /* EmergencyContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmergencyContactTableViewCell.xib; path = View/EmergencyContactTableViewCell.xib; sourceTree = "<group>"; };
 		FC3040ED1B8A7E7800D38A8A /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		FC3040F01B8AC0EB00D38A8A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		FC3040F11B8AC0EB00D38A8A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		FC978FEF1B8A3AAD001AAC0A /* Panic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9790071B8A3AAD001AAC0A /* PanicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97900C1B8A3AAD001AAC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3040F31B8AC0EB00D38A8A /* Crashlytics.framework in Frameworks */,
+				FC3040F21B8AC0EB00D38A8A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +142,8 @@
 		FC978FF21B8A3AAD001AAC0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC3040F01B8AC0EB00D38A8A /* Fabric.framework */,
+				FC3040F11B8AC0EB00D38A8A /* Crashlytics.framework */,
 				FC9790431B8A3CB2001AAC0A /* Info.plist */,
 				FC9790411B8A3C82001AAC0A /* MaterialKit */,
 				FC97901D1B8A3B85001AAC0A /* Alamofire.swift */,
@@ -212,6 +220,7 @@
 				FC978FEB1B8A3AAD001AAC0A /* Sources */,
 				FC978FEC1B8A3AAD001AAC0A /* Frameworks */,
 				FC978FED1B8A3AAD001AAC0A /* Resources */,
+				FC3040EF1B8AC0B900D38A8A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -299,6 +308,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FC3040EF1B8AC0B900D38A8A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run bdd895ff7e1f91890552cc33a9604d77dcd7ece5 7724debb929837c9c402a818d701584942487ca1a1577f91b8ab4234376b327e";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC978FEB1B8A3AAD001AAC0A /* Sources */ = {
@@ -436,6 +461,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Panic/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -451,6 +480,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Panic/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
